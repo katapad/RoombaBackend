@@ -6,8 +6,8 @@ import logging
 import json
 from websocket_server import WebsocketServer
 
-# from robot import RoombaClient
-# roomba = RoombaClient(ROOMBA_PORT)
+from robot import RoombaClient
+roomba = RoombaClient(ROOMBA_PORT)
 
 def new_client(client, server):
   server.send_message_to_all("Hey all, a new client has joined us")
@@ -21,7 +21,7 @@ def on_receive_message(client, server, message):
   print('type：{}'.format(type))
   print(data['x'])
   print(data['y'])
-  # roomba.moveToward(roomba, data['x'], data['y'])
+  roomba.moveToward(roomba, data['x'], data['y'])
 
 
 
