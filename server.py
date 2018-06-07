@@ -13,6 +13,7 @@ def new_client(client, server):
   server.send_message_to_all("Hey all, a new client has joined us")
   print("join")
   print(client)
+  roomba.toFullMode()
 
 def on_receive_message(client, server, message):
   json_dict = json.loads(message)
