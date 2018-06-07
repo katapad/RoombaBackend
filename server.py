@@ -21,7 +21,7 @@ def on_receive_message(client, server, message):
   print('type：{}'.format(type))
   print(data['x'])
   print(data['y'])
-  roomba.moveToward(roomba, data['x'], data['y'])
+  roomba.moveToward(data['x'], data['y'])
 
 
 
