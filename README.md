@@ -2,9 +2,9 @@
 
 RoombaをWebからコントロールするやつ。
 
-ここから移植。
+ここから移植。  
 [ルンバを Raspberry Pi でコントロールする ~その2~ - たるこすの日記](http://tarukosu.hatenablog.com/entry/2017/09/24/211115)
-
+zerorpcをなくしてWebSocketサーバーのみで通信。
 
 
 ## Getting Started
