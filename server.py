@@ -32,7 +32,7 @@ def on_receive_message(client, server, message):
 
 
 
-server = WebsocketServer(3000, host='127.0.0.1', loglevel=logging.INFO)
+server = WebsocketServer(3000, host='0.0.0.0', loglevel=logging.INFO)
 server.set_fn_new_client(new_client)
 server.set_fn_message_received(on_receive_message)
 server.run_forever()
